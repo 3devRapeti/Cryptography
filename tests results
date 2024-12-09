@@ -1,0 +1,8 @@
+EL Gamal:
+
+1) Alice and Bob consider g=101
+2) Alice generates (b,r,br): (4, 6, 56) and publishes (4,56)
+2) Bob generates (l,bl,b^(-lr)): (3, 64, 79)
+3) Alice sees bl = 64 and finds blr = 78
+4) Alice and Bob now converse
+5) Eve sees (b,bl,br) and applies baby step giant step to calculare l from (b,bl) and calculates b^(-lr) and succesfully eavesdrop on Alice and Bob's conversation

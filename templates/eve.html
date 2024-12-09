@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=""width=device-width, initial scale="1.0">
+        <title>Cryptography Project</title>
+        <link rel="icon" href="{% static 'file.png' %}" type="image/icon type">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Shade&family=Fredericka+the+Great&family=Honk&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-image: url("{% static 'bg2.jpg' %}");
+                background-size: cover;
+            }
+            .alice {
+                font-family: "Bungee Shade", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 600px;
+                width: 100vw;
+                text-align: center;
+                align-content: center;
+                color:rgb(152, 152, 152);
+                position: absolute;
+                top: -40vh;
+                left: 0vw;
+            }
+            .but{
+                align-content: center;
+                text-align: center;
+                position: absolute;
+                top:450px;
+                width: 408px;
+                height: 70px;
+                left: 300px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border-color: transparent;
+                background-color: rgb(13, 85, 118);
+                color: white;
+                transition: 0.7s;
+                cursor: pointer;
+            }
+            .but:hover{
+                background-color: rgb(4, 37, 53);
+            }
+            .but2{
+                align-content: center;
+                text-align: center;
+                position: absolute;
+                top:510px;
+                width: 408px;
+                height: 70px;
+                left: 300px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border-color: transparent;
+                background-color: rgb(13, 85, 118);
+                color: white;
+                transition: 0.7s;
+                cursor: pointer;
+            }
+            .but2:hover{
+                background-color: rgb(4, 37, 53);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="alice">EVE</h1>
+        <div id="main" style="background-color: rgba(33, 81, 147, 0.269); backdrop-filter: blur(10px); box-shadow: 0px 0px 30px black; position: absolute; top: 10vh; left: 20vw; width: 60vw; height: 80vh;">
+            <p style="position: absolute; border-color: white; box-shadow: 0px 0px 2px white; border-width: 2px; top: 3vh; left: 3vw; width: 54vw; height: 70vh; background-color: transparent;"> </p>
+            <h2 style="text-align: center; font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif; font-weight: 400; color: rgb(255, 255, 255); text-shadow: 0px 0px 50px black; font-size: 30px; position: absolute; top: 60px; left: 0px; width: 100%; text-align: center;">Alice has decided upon G = {{ g }} and published \((b, b^{r})\) = ({{ b }}, {{ br }})</h2>
+            <h2 style="text-align: center; font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif; font-weight: 400; color: rgb(255, 255, 255); text-shadow: 0px 0px 50px black; font-size: 30px; position: absolute; top: 120px; left: 0px; width: 100%; text-align: center;">Bob has chosen an l and published \((b, b^{l})\) = ({{ b }}, {{ bl }}) from his side</h2>
+            <h2 style="text-align: center; font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif; font-weight: 400; color: rgb(255, 255, 255); text-shadow: 0px 0px 50px black; font-size: 30px; position: absolute; top: 180px; left: 0px; width: 100%; text-align: center;">We now have, \((g, b, b^{l}, b^{r})\) = ({{ g }}, {{ b }}, {{ bl }}, {{ br }})</h2>
+            <h2 style="text-align: center; font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif; font-weight: 400; color: rgb(255, 224, 158); text-shadow: 0px 0px 50px black; font-size: 30px; position: absolute; top: 240px; left: 0px; width: 100%; text-align: center;">From this, we have cracked the values of \(b^{-lr}\) = {{ blri }}. So we can now eavesdrop on what Alice and Bob are talking..</h2>
+            <!-- <p id="sent" style="background-color: rgb(0, 126, 84); font-size: 15px; position: absolute; top: 390px; left: 450px; border-radius: 10px; padding: 10px; border-color: transparent;">Message Sent!</p>
+            <script>
+                var s=document.getElementById("sent");
+                s.style.display="none";
+                function short():
+                    setTimeout(() => {
+                        s.style.display="block"
+                    }, timeout);
+            </script> -->
+            <hr style="border-top-width: 1px; border-color: rgba(255, 255, 255, 0.674); position: absolute; top: 340px; left: 3vw; width: 54vw;">
+            {% if  msg|length  == 0 %}
+            <p style="align-content: center; text-align: center; position: absolute; top: 440px; left: 300px; width: 408px; height: 70px; border-top-left-radius: 30px; border-top-right-radius: 30px; border-color: transparent; background-color: rgba(255, 255, 255, 0.779); color: rgb(0, 30, 55);">No active conversation</p>
+            {% else %}
+            <p style="align-content: center; text-align: center; position: absolute; top: 440px; left: 300px; width: 408px; height: 70px; border-top-left-radius: 30px; border-top-right-radius: 30px; border-color: transparent; background-color: rgba(255, 255, 255, 0.779); color: rgb(0, 30, 55);">{{ msg }}</p>
+            {% endif %}
+            <button id="refresh-button" type="submit" class="but2" href="">CLICK TO UPDATE ON THE CONVERSATION</button>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  const refreshButton = document.getElementById('refresh-button');
+                  if (refreshButton) {
+                    refreshButton.addEventListener('click', function() {
+                      location.reload();
+                    });
+                  }
+                });
+            </script>
+        </div>
+    </body>
+</html>

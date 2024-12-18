@@ -1,26 +1,61 @@
 EL Gamal:
 
-1) Alice and Bob consider g=101
-2) Alice generates (b,r,br): (4, 6, 56) and publishes (4,56)
-2) Bob generates (l,bl,b^(-lr)): (3, 64, 79)
-3) Alice sees bl = 64 and finds blr = 78
-4) Alice and Bob now converse
-5) Eve sees (b,bl,br) and applies baby step giant step to calculare l from (b,bl) and calculates b^(-lr) and succesfully eavesdrop on Alice and Bob's conversation
+[12-7-2024 16:21] +966 53 834 9990 (Alaahaddadi): First one in Elgamal
+[12-7-2024 16:22] +966 53 834 9990 (Alaahaddadi): I am alice
+[12-7-2024 16:22] +966 56 399 9244 (Khalid): I will be Eve
+[12-7-2024 16:22] +1 857 559 3656 (Tridev): Then I'm Bob
+[12-7-2024 16:24] +966 53 834 9990 (Alaahaddadi): Hey Bob this is my public key = (4,56) : (b,b^r)
+[12-7-2024 16:22] +1 857 559 3656 (Tridev): Thank you Alice! Here's my public key = (4,64) : (b,b^l)
+[12-7-2024 16:21] +966 53 834 9990 (Alaahaddadi): Got it Bob! Let's chat! My message is 4
+[12-7-2024 16:22] +1 857 559 3656 (Tridev): Oh yeah got your message Alice! I hope Eve doesn't know about this.
+[12-7-2024 16:22] +966 56 399 9244 (Khalid): Hahaha! Cracked your conversation guys, Alice sent you 13. Her private key is 78 and yours is 79 Bob! :D
 
-[16-12-2024 20:01] +966 53 834 9990: First one in Elgamal
-[16-12-2024 20:02] +966 53 834 9990: I am alice
-[16-12-2024 20:02] +966 53 834 9990: You are bob
-[16-12-2024 20:02] +966 53 834 9990: Khalid eve
-[16-12-2024 20:04] +966 53 834 9990: I would request your public key and you would send me 16735493, 2, 14881177
-[16-12-2024 20:06] +966 53 834 9990: I would send you the message (c1:7064371, c2:13183966)
-[16-12-2024 20:06] +966 53 834 9990: The decrypted message is 34567
-[16-12-2024 20:07] +966 53 834 9990: Khalid cracked it
-[16-12-2024 20:27] +966 53 834 9990: Task two you are eve, khalid bob and I am alice
-[16-12-2024 20:32] +966 53 834 9990: Bob public key 
-Prime number: 16158763
-[16-12-2024 20:33] +966 53 834 9990: Generator 4343310
-[16-12-2024 20:33] +966 53 834 9990: Public number 6141086
-[16-12-2024 20:36] +966 53 834 9990: And you as eve 
+[12-7-2024 16:31] +966 56 399 9244 (Khalid): Second one in Elgamal 
+[12-7-2024 16:31] +966 56 399 9244 (Khalid): I am Alice 
+[12-7-2024 16:31] +1 857 559 3656 (Tridev): I will be Eve 
+[12-7-2024 16:31] +966 53 834 9990 (Alaahaddadi): Then I'm Bob 
+[12-7-2024 16:32] +966 56 399 9244 (Khalid): Hey Bob, this is my public key = (5, 74) : (b, b^r) 
+[12-7-2024 16:33] +966 53 834 9990 (Alaahaddadi): Thank you Alice! Here's my public key = (5, 8) : (b, b^l) 
+[12-7-2024 16:34] +966 56 399 9244 (Khalid): Got it Bob! Let's chat! My message is 74 
+[12-7-2024 16:35] +966 53 834 9990 (Alaahaddadi): Oh yeah got your message Alice! I hope Eve doesn't know about this. 
+[12-7-2024 16:37] +1 857 559 3656 (Tridev): Hahaha! Cracked your conversation guys, Alice sent you 77. Her private key is 74 and yours is 8 Bob! :D
 
-Secret key involved is 12272856
-Decrypted:46540
+[12-7-2024 16:39] +1 857 559 3656 (Tridev): Third one in Elgamal 
+[12-7-2024 16:40] +1 857 559 3656 (Tridev): I am Alice 
+[12-7-2024 16:40] +966 53 834 9990 (Alaahaddadi): I will be Eve 
+[12-7-2024 16:40] +966 56 399 9244 (Khalid): Then I'm Bob 
+[12-7-2024 16:42] +1 857 559 3656 (Tridev): Hey Bob, this is my public key = (2, 6) : (b, b^r) 
+[12-7-2024 16:43] +966 56 399 9244 (Khalid): Thank you Alice! Here's my public key = (2, 79) : (b, b^l) 
+[12-7-2024 16:44] +1 857 559 3656 (Tridev): Got it Bob! Let's chat! My message is 77 
+[12-7-2024 16:44] +966 56 399 9244 (Khalid): Oh yeah got your message Alice! I hope Eve doesn't know about this. 
+[12-7-2024 16:46] +966 53 834 9990 (Alaahaddadi): Hahaha! Cracked your conversation guys, Alice sent you 31. Her private key is 6 and yours is 79 Bob! :D
+
+[12-7-2024 16:47] +966 53 834 9990 (Alaahaddadi): Fourth one in Elgamal 
+[12-7-2024 16:47] +966 53 834 9990 (Alaahaddadi): I am Alice 
+[12-7-2024 16:47] +966 56 399 9244 (Khalid): I will be Eve 
+[12-7-2024 16:47] +1 857 559 3656 (Tridev): Then I'm Bob 
+[12-7-2024 16:48] +966 53 834 9990 (Alaahaddadi): Hey Bob, this is my public key = (3, 15) : (b, b^r) 
+[12-7-2024 16:49] +1 857 559 3656 (Tridev): Thank you Alice! Here's my public key = (3, 105) : (b, b^l) 
+[12-7-2024 16:49] +966 53 834 9990 (Alaahaddadi): Got it Bob! Let's chat! My message is 44 
+[12-7-2024 16:50] +1 857 559 3656 (Tridev): Oh yeah got your message Alice! I hope Eve doesn't know about this. 
+[12-7-2024 16:52] +966 56 399 9244 (Khalid): Hahaha! Cracked your conversation guys, Alice sent you 98. Her private key is 15 and yours is 105 Bob! :D
+
+[12-7-2024 16:52] +966 56 399 9244 (Khalid): Fifth one in Elgamal 
+[12-7-2024 16:52] +966 56 399 9244 (Khalid): I am Alice 
+[12-7-2024 16:53] +1 857 559 3656 (Tridev): I will be Eve 
+[12-7-2024 16:53] +966 53 834 9990 (Alaahaddadi): Then I'm Bob 
+[12-7-2024 16:53] +966 56 399 9244 (Khalid): Hey Bob, this is my public key = (2, 98) : (b, b^r) 
+[12-7-2024 16:54] +966 53 834 9990 (Alaahaddadi): Thank you Alice! Here's my public key = (2, 15) : (b, b^l) 
+[12-7-2024 16:54] +966 56 399 9244 (Khalid): Got it Bob! Let's chat! My message is 5 
+[12-7-2024 16:55] +966 53 834 9990 (Alaahaddadi): Oh yeah got your message Alice! I hope Eve doesn't know about this. 
+[12-7-2024 16:56] +1 857 559 3656 (Tridev): Hahaha! Cracked your conversation guys, Alice sent you 75. Her private key is 98 and yours is 15 Bob! :D
+
+[12-7-2024 16:56] +1 857 559 3656 (Tridev): Last one in Elgamal 
+[12-7-2024 16:56] +1 857 559 3656 (Tridev): I am Alice 
+[12-7-2024 16:57] +966 56 399 9244 (Khalid): I will be Eve 
+[12-7-2024 16:57] +966 53 834 9990 (Alaahaddadi): Then I'm Bob 
+[12-7-2024 16:57] +1 857 559 3656 (Tridev): Hey Bob, this is my public key = (5, 68) : (b, b^r) 
+[12-7-2024 16:58] +966 53 834 9990 (Alaahaddadi): Thank you Alice! Here's my public key = (5, 25) : (b, b^l) 
+[12-7-2024 16:59] +1 857 559 3656 (Tridev): Got it Bob! Let's chat! My message is 35 
+[12-7-2024 17:00] +966 53 834 9990 (Alaahaddadi): Oh yeah got your message Alice! I hope Eve doesn't know about this. 
+[12-7-2024 17:01] +966 56 399 9244 (Khalid): Hahaha! Cracked your conversation guys, Alice sent you 38. Her private key is 68 and yours is 25 Bob! :D

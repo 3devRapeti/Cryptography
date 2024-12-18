@@ -6,3 +6,21 @@ EL Gamal:
 3) Alice sees bl = 64 and finds blr = 78
 4) Alice and Bob now converse
 5) Eve sees (b,bl,br) and applies baby step giant step to calculare l from (b,bl) and calculates b^(-lr) and succesfully eavesdrop on Alice and Bob's conversation
+
+[16-12-2024 20:01] +966 53 834 9990: First one in Elgamal
+[16-12-2024 20:02] +966 53 834 9990: I am alice
+[16-12-2024 20:02] +966 53 834 9990: You are bob
+[16-12-2024 20:02] +966 53 834 9990: Khalid eve
+[16-12-2024 20:04] +966 53 834 9990: I would request your public key and you would send me 16735493, 2, 14881177
+[16-12-2024 20:06] +966 53 834 9990: I would send you the message (c1:7064371, c2:13183966)
+[16-12-2024 20:06] +966 53 834 9990: The decrypted message is 34567
+[16-12-2024 20:07] +966 53 834 9990: Khalid cracked it
+[16-12-2024 20:27] +966 53 834 9990: Task two you are eve, khalid bob and I am alice
+[16-12-2024 20:32] +966 53 834 9990: Bob public key 
+Prime number: 16158763
+[16-12-2024 20:33] +966 53 834 9990: Generator 4343310
+[16-12-2024 20:33] +966 53 834 9990: Public number 6141086
+[16-12-2024 20:36] +966 53 834 9990: And you as eve 
+
+Secret key involved is 12272856
+Decrypted:46540
